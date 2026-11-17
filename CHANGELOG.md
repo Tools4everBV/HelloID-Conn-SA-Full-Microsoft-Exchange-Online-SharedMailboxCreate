@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [3.1.1] - 2026-11-17
+
+### Fixed
+
+- Boolean values (`blnIncludeSendAs`) are now checked for null or empty before `[System.Convert]::ToBoolean()`, so a switch that was not touched in the form no longer causes an error
+
 ## [3.1.0] - 2026-03-09
 
 ### Added
